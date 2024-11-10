@@ -29,9 +29,9 @@ Similarly, uniform arrays of objects can include a key set identifier indicating
 
 ```
 MyStruct[
-    { +, 5, "val1" }
-    { +, !, "val2" }
-    { -, 10, "tes3" }
+    { "val1", +, 5 }
+    { "val2", +, ! }
+    { "tes3", -, 10 }
 ]
 ```
 
@@ -125,14 +125,7 @@ MyStruct(bar,baz,foo)
 
 ```
 v2.0
-[
-    {
-        foo: "val1",
-        bar: +,
-        baz: 5,
-    }
-    { foo: "val2", bar: +, baz: !, }
-]
+[{foo:"val1",bar:+,baz:5,}{foo:"val2",bar:+,baz:!,}]
 ```
 
 ```
