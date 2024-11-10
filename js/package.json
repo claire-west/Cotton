@@ -1,0 +1,11 @@
+{
+  "name": "cobl-js",
+  "version": "1.0.0",
+  "description": "COBL reference implementation in JavaScript",
+  "type": "module",
+  "license": "https://github.com/claire-west",
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "fs": "^0.0.1-security"
+  }
+}

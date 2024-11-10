@@ -1,0 +1,1 @@
+v1.0a(a,b,c,d,e){name:"foo"desc:"bar"array:["a","b","c","d"]escapes:["backslash:\\","doublequote:\""]objarray:a[{"1",1,+,!,}{"2",2,-,,"val"}{"3",3.3,,,}]object:a{"4",4.45,+,"foo","bar",}2d:[[][][]]scinot:2e5}
