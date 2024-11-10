@@ -4,7 +4,7 @@
 
 ## Overview
 
-Object structures are declared as ordered **key sets**. Each key set has an identifier that includes the characters `[a-zA-Z]` as well as a comma-separated list of keys surrounded by parentheses.
+Object structures are declared as ordered **key sets**. Each key set has an identifier that includes the characters `[a-zA-Z]` as well as a comma-separated list of keys surrounded by parentheses. Objects referencing the key set list their values in the same order that the keys are declared, without restating the names of the keys.
 
 ```
 MyStruct(foo,bar,baz)
@@ -14,14 +14,14 @@ This key set can be applied to an object by leading the opening brace of the obj
 This is not mandatory, so the same object can be expressed in either of the following ways:
 
 ```
-<Explicit properties in any order>
+<<Explicit properties>>
 {
     foo: "val1",
     bar: +,
     baz: 5
 }
 
-<Ordered properties using key set>
+<<Using the MyStruct key set>>
 MyStruct{ "val1", +, 5 }
 ```
 
@@ -63,7 +63,7 @@ Comments are any text surrounded by double angle brackets/chevrons (`<<` and `>>
 
 **null** values may be expressed with a bare exclamation mark (`!`). In an object defined by a key set, the symbol can be omitted and two (or more) consecutive commas (`,,`) implicitly results in a null value for that position.
 
-**Objects** are sets of key-value pairs surrounded by curly braces (`{` and `}`). The pairs may be comma-separated, but this is only mandatory for numbers, booleans, and null values to distinguish them from the start of the following key. The opening brace may be prefixed by a key set identifier, in which case the contents of the braces are an ordered, comma-separated list of values matching the order of keys in the key set.
+**Objects** are sets of key-value pairs surrounded by curly braces (`{` and `}`). The pairs may be comma-separated, but this is only mandatory for numbers, booleans, and null values to distinguish them from the start of the following key. The opening brace may be prefixed by a key set identifier, in which case the contents of the braces are a comma-separated list of values matching the order of keys in the key set.
 
 **Arrays** are lists of values surrounded by square brackets (`[` and `]`). If the opening bracket is prefixed by a key set identifier, the array is assumed to be a uniform list of objects matching that structure.
 
@@ -83,7 +83,7 @@ MyStruct{ +, 5, "val1" }
 ```
 
 ```
-<this is a comment>
+<<this is a comment>>
 {
     foo: "val1",
     bar: +,
@@ -140,7 +140,7 @@ v2.0
 ```
 
 ```
-v1....0000.01 <a strange version number, but technically valid>
+v1....0000.01 <<a strange version number, but technically valid>>
 56
 ```
 
